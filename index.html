@@ -400,13 +400,13 @@
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p>
-            Our method can generate disentangled geometry and appearance given a text prompt (cf. figure (a)),
+            <!-- Our method can generate disentangled geometry and appearance given a text prompt (cf. figure (a)),
             which are produced by (b) geometry modeling and (c) appearance modeling, respectively. (b) We employ DMTET as our 3D geometry
             representation, which is initialized as a 3D ellipsoid here. To optimize the parameters of DMTET, we render the normal map (and the
             object mask in the early training phase) of the extracted mesh from DMTet as the shape encoding of stable diffusion. (c) For
             appearance modeling, we introduce the spatially-varying Bidirectional Reflectance Distribution Function (BRDF) modeling into text-to-
             3D generation, and learn to predict three components (namely, kd, krm, and kn) of the appearance. Both geometry and appearance
-            modeling are supervised by Score Distillation Sampling (SDS) loss.
+            modeling are supervised by Score Distillation Sampling (SDS) loss. -->
           </p>
         </div> 
         <img src="./static/gif/pipeline.png">
@@ -444,12 +444,11 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
-      @InProceedings{Chen_2023_ICCV,
-        author    = {Chen, Rui and Chen, Yongwei and Jiao, Ningxin and Jia, Kui},
-        title     = {Fantasia3D: Disentangling Geometry and Appearance for High-quality Text-to-3D Content Creation},
-        booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-        month     = {October},
-        year      = {2023}
+      @article{wu2023hd,
+        title={Hd-fusion: Detailed text-to-3d generation leveraging multiple noise estimation},
+        author={Wu, Jinbo and Gao, Xiaobo and Liu, Xing and Shen, Zhengyang and Zhao, Chen and Feng, Haocheng and Liu, Jingtuo and Ding, Errui},
+        journal={arXiv preprint arXiv:2307.16183},
+        year={2023}
       }
       </code></pre>
   </div>
