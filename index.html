@@ -179,23 +179,23 @@
         <div class="content has-text-justified">
           <p>
             In this paper, we study Text-to-3D content generation
-                leveraging 2D diffusion priors to enhance the quality and
-                detail of the generated 3D models. Recent progress [11] in
-                text-to-3D has shown that employing high-resolution (e.g.,
-                512 × 512) renderings can lead to the production of high-
-                quality 3D models using latent diffusion priors. To enable
-                rendering at even higher resolutions, which has the poten-
-                tial to further augment the quality and detail of the mod-
-                els, we propose a novel approach that combines multiple
-                noise estimation processes with a pretrained 2D diffusion
-                prior. Distinct from the Bar-Tal et al.s’ study which binds
-                multiple denoised results [1] to generate images from texts,
-                our approach integrates the computation of scoring distil-
-                lation losses such as SDS loss and VSD loss which are es-
-                sential techniques for the 3D content generation with 2D
-                diffusion priors. We experimentally evaluated the proposed
-                approach. The results show that the proposed approach can
-                generate high-quality details compared to the baselines.
+            leveraging 2D diffusion priors to enhance the quality and
+            detail of the generated 3D models. Recent progress Magic3d in
+            text-to-3D has shown that employing high-resolution (e.g.,
+            512 × 512) renderings can lead to the production of high-
+            quality 3D models using latent diffusion priors. To enable
+            rendering at even higher resolutions, which has the poten-
+            tial to further augment the quality and detail of the mod-
+            els, we propose a novel approach that combines multiple
+            noise estimation processes with a pretrained 2D diffusion
+            prior. Distinct from the MultDiffusion study which binds
+            multiple denoised results to generate images from texts,
+            our approach integrates the computation of scoring distil-
+            lation losses such as SDS loss and VSD loss which are es-
+            sential techniques for the 3D content generation with 2D
+            diffusion priors. We experimentally evaluated the proposed
+            approach. The results show that the proposed approach can
+            generate high-quality details compared to the baselines.
           </p>
         </div>
       </div>
@@ -387,30 +387,23 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Conclusion</h2>
         <div class="content has-text-justified">
           <p>
-            In this paper, we study Text-to-3D content generation
-            leveraging 2D diffusion priors to enhance the quality and
-            detail of the generated 3D models. Recent progress Magic3d in
-            text-to-3D has shown that employing high-resolution (e.g.,
-            512 × 512) renderings can lead to the production of high-
-            quality 3D models using latent diffusion priors. To enable
-            rendering at even higher resolutions, which has the poten-
-            tial to further augment the quality and detail of the mod-
-            els, we propose a novel approach that combines multiple
-            noise estimation processes with a pretrained 2D diffusion
-            prior. Distinct from the MultDiffusion study which binds
-            multiple denoised results to generate images from texts,
-            our approach integrates the computation of scoring distil-
-            lation losses such as SDS loss and VSD loss which are es-
-            sential techniques for the 3D content generation with 2D
-            diffusion priors. We experimentally evaluated the proposed
-            approach. The results show that the proposed approach can
-            generate high-quality details compared to the baselines.
+            In this paper, we have proposed a multiple noise esti-
+            mation approach that enables memory-efficient training for
+            3D generation within a high-resolution rendering space. We
+            have evaluated the proposed approach through experiments
+            and demonstrated that the proposed approach is effective in
+            generating high-quality 3D models with enhanced details.
+            In addition, we have presented an entire Text-to-3D sys-
+            tem that leverages the proposed approach and ControlNet
+            for geometrically correct 3D content generation through 2D
+            diffusion priors.
+            
           </p>
         </div> 
-        <img src="./static/gif/pipeline.png">
+        <!-- <img src="./static/gif/pipeline.png"> -->
       </div>
     </div>
 
